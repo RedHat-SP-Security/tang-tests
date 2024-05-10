@@ -5,7 +5,6 @@ contact: Martin Zelený <mzeleny@redhat.com>
 test: ./runtest.sh
 require+:
   - tang
-  - http-parser
   - curl
   - /usr/sbin/semanage
 duration: 5m

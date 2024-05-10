@@ -53,7 +53,7 @@ $(METADATA): Makefile
 	@echo "Type:            Sanity" >> $(METADATA)
 	@echo "TestTime:        5m" >> $(METADATA)
 	@echo "RunFor:          tang" >> $(METADATA)
-	@echo "Requires:        tang http-parser curl /usr/sbin/semanage" >> $(METADATA)
+	@echo "Requires:        tang curl /usr/sbin/semanage" >> $(METADATA)
 	@echo "Priority:        Normal" >> $(METADATA)
 	@echo "License:         GPLv2+" >> $(METADATA)
 	@echo "Confidential:    no" >> $(METADATA)

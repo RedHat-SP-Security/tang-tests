@@ -30,7 +30,7 @@
 . /usr/share/beakerlib/beakerlib.sh || exit 1
 
 PACKAGE="tang"
-PACKAGES="${PACKAGE} http-parser curl"
+PACKAGES="${PACKAGE} curl"
 TANG="tangd.socket"
 PORT=7500
 
