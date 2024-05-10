@@ -5,7 +5,6 @@ component+:
 test: ./runtest.sh
 recommend:
   - tang
-  - http-parser
   - curl
 duration: 24h
 enabled: true
