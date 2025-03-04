@@ -13,6 +13,7 @@ tag:
   - NoRHEL4
   - NoRHEL5
   - Tier1
+  - ImageMode
 tier: '1'
 extra-summary: /CoreOS/tang/Sanity/simple-tang-server-start
 extra-task: /CoreOS/tang/Sanity/simple-tang-server-start
