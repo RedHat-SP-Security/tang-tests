@@ -2,26 +2,27 @@ summary: Test tang SHA-256 thumbprints
 description: ''
 contact: Martin Zelený <mzeleny@redhat.com>
 component:
-- tang
+  - tang
 test: ./runtest.sh
 recommend:
-- tang
+  - tang
 duration: 10m
 enabled: true
 tag:
-- CI-Tier-1
-- Tier2
-- ImageMode
+  - CI-Tier-1
+  - Tier2
+  - ImageMode
 tier: '2'
 link:
--   verifies: https://bugzilla.redhat.com/show_bug.cgi?id=1956765
+  - verifies: https://bugzilla.redhat.com/show_bug.cgi?id=1956765
 adjust:
--   enabled: false
+  - enabled: false
     when: distro < rhel-9
     continue: false
--   enabled: false
+  - enabled: false
     when: distro == rhel-alt-7
     continue: false
 extra-nitrate: TC#0610479
 extra-summary: /CoreOS/tang/Sanity/sha256-thp
 extra-task: /CoreOS/tang/Sanity/sha256-thp
+id: c531a97c-c7b2-41ca-82a7-e20d5de9f42a

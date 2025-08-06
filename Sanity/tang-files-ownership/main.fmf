@@ -2,20 +2,21 @@ summary: verify correct file ownership
 description: verifies if important tang files have correct ownership
 contact: Patrik Koncity <pkoncity@redhat.com>
 component:
-- tang
+  - tang
 test: ./runtest.sh
 framework: beakerlib
 recommend:
-- tang
-- http-parser
-- jose
+  - tang
+  - http-parser
+  - jose
 duration: 5m
 enabled: true
 tag:
-- CI-Tier-1
-- Tier1
+  - CI-Tier-1
+  - Tier1
 tier: '1'
 adjust:
--   enabled: false
+  - enabled: false
     when: distro == rhel-4, rhel-5, rhel-6, rhel-7, rhel-8
     continue: false
+id: dd0d6615-f2a9-43c3-97a6-a202711d81c1

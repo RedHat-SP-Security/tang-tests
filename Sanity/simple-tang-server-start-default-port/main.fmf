@@ -1,5 +1,5 @@
-summary: Run tang server, which stays running after test finishes. For manual testing
-    with --reserve parameter.
+summary: Run tang server, which stays running after test finishes. For manual 
+    testing with --reserve parameter.
 component+:
   - clevis
 test: ./runtest.sh
@@ -22,3 +22,4 @@ adjust:
   - enabled: false
     when: distro < rhel-7
     continue: false
+id: 4b6f2001-fc36-4660-b696-0dee81f7c5b8
