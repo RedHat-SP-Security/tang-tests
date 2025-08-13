@@ -50,9 +50,9 @@ rlJournalStart
         rlRun "systemctl status tangd.socket" 0 "Confirm that tangd is running"
         # verify user account
         rlRun -s "id tang"
-        rlRun "grep -E 'groups=.*tang' $rlRun_LOG"
-        rlRun "grep -E 'gid=.*tang' $rlRun_LOG"
-        rlRun "grep -E 'uid=.*tang' $rlRun_LOG"
+        rlRun "grep -E 'groups=[0-9]+\(tang\)' $rlRun_LOG"
+        rlRun "grep -E 'gid=[0-9]+\(tang\)' $rlRun_LOG"
+        rlRun "grep -E 'uid=[0-9]+\(tang\)' $rlRun_LOG"
         # check /var files
         checkFile -e /var/db/tang tang tang
         # check random /usr file
