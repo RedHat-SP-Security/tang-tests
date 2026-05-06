@@ -9,6 +9,7 @@ recommend:
 duration: 24h
 enabled: true
 tag:
+  - fips
   - CI-Tier-1
   - NoRHEL4
   - NoRHEL5

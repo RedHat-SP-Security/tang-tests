@@ -10,6 +10,7 @@ require+:
 duration: 5m
 enabled: true
 tag:
+  - fips
   - NoRHEL4
   - NoRHEL5
 extra-summary: /CoreOS/tang/Sanity/simple-tang-server-start-different-port
