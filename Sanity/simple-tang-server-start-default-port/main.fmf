@@ -1,5 +1,10 @@
-summary: Run tang server, which stays running after test finishes. For manual 
+summary: Run tang server, which stays running after test finishes. For manual
     testing with --reserve parameter.
+description: |
+    Verify that the tang server starts on the default port, the tangd socket
+    is active, and the server returns a valid advertisement containing JWS
+    payload, protected header, and signature fields. Also tests tangd-keygen
+    key generation.
 component+:
   - clevis
 test: ./runtest.sh

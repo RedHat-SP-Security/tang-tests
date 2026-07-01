@@ -1,5 +1,8 @@
 summary: Test tang SHA-256 thumbprints
-description: ''
+description: |
+    Verify that tang server keys generated automatically and via tangd-keygen
+    are named after their SHA-256 thumbprints, and that tang-show-keys outputs
+    the correct SHA-256 thumbprint for the signing key.
 contact: Martin Zelený <mzeleny@redhat.com>
 component:
   - tang
