@@ -1,6 +1,9 @@
 summary: Run tang server on different port, which stays running after test 
     finishes. For manual testing with --reserve parameter.
-description: ''
+description: |
+    Verify that the tang server can be configured to listen on a non-default
+    port using a systemd socket override and SELinux port labeling, and that
+    the server returns a valid advertisement on the custom port.
 contact: Martin Zelený <mzeleny@redhat.com>
 test: ./runtest.sh
 require+:
